@@ -19,9 +19,8 @@ data.forEach((ufoReport) => {
 // Select the button
 var button = d3.select("#filter-btn");
 
-// Create event handlers 
+// Create event handler 
 button.on("click", runEnter);
-
 
 // Complete the event handler function for the form
 function runEnter() {
@@ -46,6 +45,7 @@ function runEnter() {
     // Clear out table
     tbody.html("")
 
+    // Filter and return data by input date
     filteredData.forEach((ufoReport) => {
         var row = tbody.append("tr");
         Object.entries(ufoReport).forEach(([key, value]) => {
