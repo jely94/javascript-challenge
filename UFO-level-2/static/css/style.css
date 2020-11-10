@@ -49,7 +49,7 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Adding styles to the aside and filter form */
@@ -98,7 +98,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/ufo.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -111,6 +111,13 @@ select {
 }
 
 .hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+
+#delayedText {
   font-size: 2rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;

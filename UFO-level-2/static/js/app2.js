@@ -30,18 +30,31 @@ function runEnter() {
     d3.event.preventDefault();
     
     // Select the input element and get the raw HTML node
-    var inputElement = d3.select("#datetime");
-  
-    // // Get the value property of the input element
-    var inputValue = inputElement.property("value");
-  
-    // console.log(inputValue);
-    var filteredData = tableData
-    if (inputValue) {
-        filteredData = tableData.filter(row => row.datetime === inputValue);
-        }
+    var inputDate = d3.select("#datetime").property("value");
+    var inputCity = d3.select("#city").property("value").toLowerCase();
+    var inputState = d3.select("#state").property("value").toLowerCase();
+    var inputCountry = d3.select("#country").property("value").toLowerCase();
+    var inputShape = d3.select("#shape").property("value").toLowerCase();
 
-    console.log(filteredData);
+    
+    // Look at each input value and filter the table
+    var filteredData = tableData
+    if (inputDate) {
+      filteredData = filteredData.filter(row => row.datetime === inputDate);
+      }
+    if (inputCity) {
+      filteredData = filteredData.filter(row => row.city === inputCity);
+      }
+    if (inputState) {
+      filteredData = filteredData.filter(row => row.state === inputState);
+      }
+    if (inputCountry) {
+      filteredData = filteredData.filter(row => row.country === inputCountry);
+      }
+    if (inputShape) {
+      filteredData = filteredData.filter(row => row.shape === inputShape);
+      }
+
 
     // Clear out table
     tbody.html("")
