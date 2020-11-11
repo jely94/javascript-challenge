@@ -118,10 +118,13 @@ select {
 }
 
 #delayedText {
-  font-size: 2rem;
-  opacity: 0;
+  font-size: 6rem;
+  -webkit-text-stroke: 2px black;
+  font-family: fantasy;
+  font-style: italic;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  color: #a854e0;
 }
 
 /* input placeholder color changes */
