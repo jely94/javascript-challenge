@@ -50,11 +50,12 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter search criteria</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/4/2010">
-                        <input class="form-control" id="city" type="text" placeholder="enter city">
-                        <input class="form-control" id="state" type="text" placeholder="enter state">
-                        <input class="form-control" id="country" type="text" placeholder="enter country">
-                        <input class="form-control" id="shape" type="text" placeholder="enter shape">
+                        <input class="form-control" id="datetime" type="text" onfocus="this.value=''" placeholder="1/4/2010">
+                        <input class="form-control" id="city" type="text" onfocus="this.value=''" placeholder="enter city">
+                        <input class="form-control" id="state" type="text" onfocus="this.value=''" placeholder="enter state">
+                        <input class="form-control" id="country" type="text" onfocus="this.value=''" placeholder="enter country">
+                        <input class="form-control" id="shape" type="text" onfocus="this.value=''" placeholder="enter shape">
+                        <label for="date">Fields clear on focus</label>
                       </li>
                     </ul>
                   </div>
