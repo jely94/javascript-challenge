@@ -49,7 +49,7 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 /* Adding styles to the aside and filter form */
@@ -98,54 +98,58 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/ufo.jpg");
+  background-image: url("../images/alien.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-right: 900px;
+  margin-top: 125px;
   font-size: 0.1rem;
+  -webkit-text-stroke: 2px black;
   animation: title 1.2s forwards linear;
 }
 
 .hero p {
-  font-size: 2rem;
+  margin-right: 500px;
+  font-size: 3rem;
+  -webkit-text-stroke: 2px black;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
-  animation-delay: 1.2s;
+  animation-delay: 1.2s;  
 }
 
 #delayedText {
+  margin-right: 50px;
   font-size: 6rem;
   -webkit-text-stroke: 2px black;
   font-family: fantasy;
-  font-style: italic;
-  animation: subtitle 1.2s forwards linear;
-  animation-delay: 1.2s;
+  font-style: italic; 
+  animation: ease-in; 
   color: #5dc6ce;
 }
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #5dc6ce;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: #5dc6ce;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #8e979f;
+  color: #5dc6ce;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #8e979f;
+  color: #5dc6ce;
 }
 
 /* media queries which will only be activated at specific screen sizes */
